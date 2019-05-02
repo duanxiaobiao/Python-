@@ -1,0 +1,18 @@
+项目说明：
+    1.本项目爬取猎聘网，java,python,php,web前端,Android,UI,等诸多方向，每个方向大概100页的招聘就业信息。
+
+    2.数据存储在piplines.py文件中编写，启用MySQL数据库，
+            数据库名称：liepin_information
+            表名：informations :Scrapy爬虫框架爬取到的原始数据;
+                 information01 :由informations表经数据清洗后的数据,由于刚开始学习Python数据分析，起初没有考虑太多，只做了简单清洗。
+
+    3.Liepin_analysis文件夹
+        包括三部分：
+                images:经数据分析后获得的图片存放与此。
+                liepin_analysis01:对数据库中原始表的数据清洗。
+                liepin_analysis02：清洗后的数据。
+    4.MySQL文件夹:
+        两个数据表informations和informations01的数据导出.
+
+    5.说明:
+        除了liepin_analysis文件夹、MySQL文件夹、以及项目说明外,其余皆为Scrapy框架生成的文件(main.py文件为自创文件)
